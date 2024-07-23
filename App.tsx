@@ -6,6 +6,9 @@ import {
   Poppins_700Bold,
 } from '@expo-google-fonts/poppins';
 import { Home } from 'src/screens/home';
+import { ThemeProvider } from 'styled-components';
+
+import theme from '~/global/theme';
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -18,5 +21,9 @@ export default function App() {
     return null;
   }
 
-  return <Home />;
+  return (
+    <ThemeProvider theme={theme}>
+      <Home />
+    </ThemeProvider>
+  );
 }
