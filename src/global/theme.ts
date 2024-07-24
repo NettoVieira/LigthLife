@@ -6,7 +6,7 @@ export default {
     content_color: '#D5DAE0',
     disable: '#F6F7F7',
     dark: '#173430',
-    neutra_grlay: '#617D79',
+    neutra_gray: '#617D79',
     shape: '#fff',
     green_text: '#19B888',
     yellow_text: '#F7B400',
