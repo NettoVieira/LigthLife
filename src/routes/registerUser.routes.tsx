@@ -5,7 +5,7 @@ import { useTheme } from 'styled-components';
 
 import { Tall } from '~/screens/registerUser/tall';
 
-const { Navigator, Screen, Group } = createNativeStackNavigator();
+const { Navigator, Screen } = createNativeStackNavigator();
 
 export function RegisterUserRoutes() {
   const { colors } = useTheme();
@@ -17,11 +17,11 @@ export function RegisterUserRoutes() {
       <Navigator
         screenOptions={{
           headerShown: false,
-          contentStyle: { backgroundColor: colors.background },
+          contentStyle: { backgroundColor: colors.background, padding: 8 },
         }}>
         <Screen name="Tall" component={Tall} />
       </Navigator>
-      <View style={{ backgroundColor: 'red', height: 120 }}>
+      <View style={{ height: 120 }}>
         <Text>Ola</Text>
       </View>
     </>
