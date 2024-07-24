@@ -1,9 +1,9 @@
 import styled from 'styled-components/native';
 
-import { moderateScale } from '~/utils/scale';
+import { moderateScale, verticalScale } from '~/utils/scale';
 
 export const Container = styled.View`
-  height: 107px;
+  height: ${verticalScale(107)}px;
   width: 100%;
   align-items: center;
   justify-content: center;
