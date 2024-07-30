@@ -21,9 +21,6 @@ export function RegisterUserRoutes() {
         }}>
         <Screen name="Tall" component={Tall} />
       </Navigator>
-      <View style={{ height: 120 }}>
-        <Text>Ola</Text>
-      </View>
     </>
   );
 }
