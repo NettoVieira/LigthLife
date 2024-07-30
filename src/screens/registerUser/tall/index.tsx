@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { HeightPicker } from './HeightPicker';
+import { HeightPicker } from './heightPicker/index';
 import { Container } from './styles';
 
 import { SetupAccount } from '~/components/SetupAccount';
@@ -13,6 +13,7 @@ export function Tall() {
         numberSetup={5}
         title="Qual a sua altura"
       />
+
       <HeightPicker />
     </Container>
   );
