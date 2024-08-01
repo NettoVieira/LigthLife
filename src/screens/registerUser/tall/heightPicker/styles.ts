@@ -1,24 +1,25 @@
-import { FlatList, FlatListProps } from 'react-native';
-import Animated, { FlatListPropsWithLayout } from 'react-native-reanimated';
+import { FontAwesome6 } from '@expo/vector-icons';
+import Animated from 'react-native-reanimated';
 import styled from 'styled-components/native';
 
+import { moderateScale } from '~/utils/scale';
+
 export const Container = styled.View``;
-
-export const Indicator = styled.View`
-  position: absolute;
-  top: 40%;
-  justify-content: 'center';
-  align-items: 'center';
-`;
-
-export const IndicatorText = styled.Text`
-  font-size: 24px;
-  color: '#f1c40f';
-`;
 
 export const ContentList = styled.View`
   height: 280px;
   width: 100%;
+  align-items: center;
+  justify-content: center;
+`;
+
+export const HeaderList = styled.View`
+  margin-bottom: 12px;
+`;
+
+export const ChevronIcon = styled(FontAwesome6)`
+  font-size: ${moderateScale(24)}px;
+  color: ${({ theme }) => theme.colors.yellow_text};
 `;
 
 export const List = styled(Animated.FlatList)``;

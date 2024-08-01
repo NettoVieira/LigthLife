@@ -11,7 +11,7 @@ export const Container = styled.View`
 
 export const CountStep = styled.Text`
   font-family: ${({ theme }) => theme.fonts.poppins_medium};
-  color: ${({ theme }) => theme.colors.primary};
+  color: ${({ theme }) => theme.colors.dark};
   font-size: ${moderateScale(12)}px;
 `;
 
